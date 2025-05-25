@@ -15,7 +15,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--gpu',
                         type=int,
-                        default=1,
+                        default=0,
                         help="GPU ID, -1 for CPU")
     parser.add_argument('--seed',
                         type=int,
@@ -24,8 +24,7 @@ if __name__ == '__main__':
     parser.add_argument('--repeat', type=int, default=1, help='repeat index')
     parser.add_argument('--freeze_datasplit', type=int, default=0, help='freeze to save dict_users.pik or not')
     parser.add_argument('--config_name', type=str,
-                        # default='attack/electricity_theft_detection/exp_noattack/electricity_theft_detection.yaml',
-                        default='attack/generator_defect_classification/exp_noattack/image_defectdetection_dpfed_NM14.yaml',
+                        default='attack/electricity_theft_detection/exp_noattack/electricity_theft_detection.yaml',
                         help='configuration')
 
     meta_args = parser.parse_args()
