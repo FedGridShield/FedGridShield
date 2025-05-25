@@ -1,0 +1,8 @@
+log/
+data/dataset/ac_microgrid_timeseries
+data/dataset/electricity_theft_detection
+data/dataset/generator_defect_classification
+config/attack/ac_microgrid_timeseries
+backup/
+centralized/
+auto_run.txt

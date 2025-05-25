@@ -1,0 +1,28 @@
+_base_ : ['../../../base.yaml']
+
+############## base differential #############
+num_users: 20 # number of users: K
+num_selected_users: 5 # number of selected users: 100, for shakespeare, it is 10
+round: 30 # rounds of training
+tau: 3
+batch_size: 64 # local batch size
+local_lr: 0.1 # local learning rate
+local_momentum: 0.5 # SGD Momentum default 0.5
+decay_weight: 0.99 # learning rate decay weight default 0.5
+global_momentum: 0.9 # global momentum
+clip: 1 # clipping threshold
+########### base differential ends ###########
+
+method: attack_defense_fedavg
+attack: agrTailoredKrumBulyan
+defend: krum
+# Model
+model: lstm_elec # resnet_defectclassification mlp_timeseries
+
+# Dataset configure
+data_type: timeseries
+dataset: electricity_theft_detection
+iid: 1 # whether i.i.d or not
+
+# Attack method
+num_attackers: 2 # number of attackers
