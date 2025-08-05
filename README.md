@@ -2,6 +2,8 @@
 
 In this repo, we introduce a scalable framework, FedGridShield, for studying attacks and defenses in federated learning for smart grid systems.
 
+📢 Update: Our Paper has been accepted at ACM Transactions on Cyber-Physical Systems！
+
 ## Dataset Describption
 
 We provide two datasets in our framework as examples.
